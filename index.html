@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS Speaking Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <header class="stage__header">
+        <div class="live-indicator">
+          <span class="live-indicator__dot"></span>
+          <span>Live</span>
+        </div>
+        <button class="icon-button" type="button" aria-label="Toggle camera">
+          <span class="icon">📷</span>
+        </button>
+      </header>
+
+      <section class="stage__status">
+        <p class="stage__title">AI Examiner</p>
+        <p class="stage__subtitle">Listening for your response...</p>
+      </section>
+
+      <section class="stage__wave">
+        <div class="wave"></div>
+      </section>
+
+      <footer class="stage__controls">
+        <button class="control" type="button" aria-label="Toggle video">
+          <span class="icon">🎥</span>
+        </button>
+        <button class="control" type="button" aria-label="Share screen">
+          <span class="icon">🖥️</span>
+        </button>
+        <button class="control control--primary" type="button" aria-label="Toggle microphone" id="micButton">
+          <span class="icon">🎤</span>
+        </button>
+        <button class="control control--danger" type="button" aria-label="End session">
+          <span class="icon">⏹️</span>
+        </button>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
